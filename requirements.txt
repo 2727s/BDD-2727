@@ -1,0 +1,8 @@
+# pytest-bdd runs the feature files. Playwright drives the browser.
+# Install the browser once: playwright install chromium
+pytest
+pytest-bdd
+playwright
+# Unit tests, including tdd.py, use the same pytest command.
+# Reads .env into the process so config.py can see BASE_URL and the rest.
+python-dotenv
