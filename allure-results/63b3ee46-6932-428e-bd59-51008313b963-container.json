@@ -1,0 +1,1 @@
+{"uuid": "f4b66c59-4c1c-41da-ab43-0d0b2beba5ac", "befores": [{"name": "pytestbdd_stepdef_given_I open the {string} practice page", "status": "passed", "start": 1791485773835, "stop": 1791485773835}], "afters": [{"name": "pytestbdd_stepdef_given_I open the {string} practice page::<lambda>", "start": 1791485775522}], "start": 1791485773835, "stop": 1791485775522}

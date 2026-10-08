@@ -13,6 +13,11 @@ def practice_page_is_open(page, name):
     assert path_for(name) in page.url
 
 
+@then("the inventory lists {string}")
+def inventory_lists(page, product):
+    page.get_by_text(product, exact=True).first.wait_for()
+
+
 @then("I close the browser")
 def close_the_browser(page):
     browser = page.context.browser

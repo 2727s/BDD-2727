@@ -1,0 +1,1 @@
+{"uuid": "1e177c5f-38c1-4cb3-a41a-06a3861a62b4", "befores": [{"name": "pytestbdd_stepdef_then_the inventory lists {string}", "status": "passed", "start": 1791485775160, "stop": 1791485775160}], "afters": [{"name": "pytestbdd_stepdef_then_the inventory lists {string}::<lambda>", "start": 1791485775189}], "start": 1791485775160, "stop": 1791485775189}
