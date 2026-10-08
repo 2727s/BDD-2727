@@ -2,6 +2,7 @@
 # Install the browser once: playwright install chromium
 pytest
 pytest-bdd
+allure-pytest
 playwright
 # Unit tests, including tdd.py, use the same pytest command.
 # Reads .env into the process so config.py can see BASE_URL and the rest.

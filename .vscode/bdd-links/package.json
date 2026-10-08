@@ -3,12 +3,25 @@
   "displayName": "BDD step links",
   "description": "Ctrl+click a Python step string to open the matching line in the feature file.",
   "publisher": "bdd2727",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.82.0"
   },
   "activationEvents": [
-    "onLanguage:python"
+    "onLanguage:python",
+    "onStartupFinished"
   ],
-  "main": "./extension.js"
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bdd-links.openStep",
+        "title": "Open the feature step"
+      },
+      {
+        "command": "bdd-links.openScenario",
+        "title": "Open the feature scenario"
+      }
+    ]
+  }
 }

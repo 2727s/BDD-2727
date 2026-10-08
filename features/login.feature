@@ -5,17 +5,23 @@ Feature: Login automation
 
   Background:
     Given I open the "login" practice page
+    Then the "login" practice page is open
 
   Scenario: Valid user sees a success message
     When I sign in with the demo account
     Then I see "Login Successful! Welcome to Premium Banking."
-    Then I close the browser
+    
 
   Scenario: Empty form asks for email and password
     When I sign in as "" with password ""
     Then I see "Email and Password are required"
 
-  Scenario: Wrong credentials show an error
-    When I sign in as "wrong@example.com" with password "wrong-password"
+  Scenario Outline: Wrong credentials show an error
+    When I sign in as "<email>" with password "<password>"
     Then I see "Invalid email id and password"
+
+    Examples:
+      | email                | password       |
+      | wrong@example.com    | wrong-password |
+      | user@premiumbank.com | wrong-password |
 
